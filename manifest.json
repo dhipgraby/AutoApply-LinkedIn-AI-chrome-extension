@@ -4,7 +4,9 @@
   "description": "Auto applying to LinkedIn Jobs",
   "permissions": [
     "storage",
-    "tabs"
+    "tabs",
+    "scripting",
+    "activeTab"
   ],
   "host_permissions": [
     "https://*.linkedin.com/*"
@@ -18,7 +20,7 @@
         "https://*.linkedin.com/*"
       ],
       "js": [
-        "contentScript.js"
+        "contentScript.js"        
       ]
     }
   ],
@@ -28,7 +30,9 @@
         "assets/bookmark.png",
         "assets/play.png",
         "assets/delete.png",
-        "assets/save.png"
+        "assets/save.png",
+        "src/controllers/JobsController/index.js",
+        "helpers/utils.js"
       ],
       "matches": [
         "https://*.linkedin.com/*"
